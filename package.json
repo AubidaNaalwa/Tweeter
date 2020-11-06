@@ -1,0 +1,15 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "this project have been build with love",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "review": "node node_modules/elevation-pr/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elevation-pr": "^1.4.0"
+  }
+}
