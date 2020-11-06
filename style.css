@@ -1,0 +1,146 @@
+body{
+    background-color: oldlace;
+   
+}
+#container{
+    background-color: oldlace;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+}
+
+.grid-item{
+  font-size: 30px;
+  }
+#grid-head{
+    
+    color: black;
+   
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#logo{
+    font-size: xxx-large;
+}
+#personalLogo{
+    size: 20px;
+    height: 100%;
+    justify-self: end;
+}
+#grid-Twit{
+   display: grid;
+   grid-template-columns: 7fr 3fr;
+   grid-gap: 3rem 3rem;
+ 
+
+    
+}
+
+#text-input{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 100%;
+  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#twitbtn{  
+   background-color: blue;
+   color: black;
+   height: 100%;
+   float: left;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+div#twitbtn.grid-item{
+    background-color: rgb(56, 55, 138);
+    text-align: center;
+   
+}
+
+#grid-posts{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem 2rem;
+   
+    
+}
+.post-container{
+    background: #1995AD;
+    padding: 2%;
+    border-radius: 1ch;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-gap: 0.30rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#grid-posts{
+    background-color: oldlace;
+    border-radius: 1ch;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+#grid-posts{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: auto;
+
+
+}
+
+.commentContainer{
+    font-size: x-large;
+   color: white;
+}
+
+.thepost{
+    font-size: xxx-large;
+    color: white;
+}
+
+button {
+    background-color: none;
+    border: none;
+    color: #1995AD;
+    text-align: center;
+    font-size: 16px;
+
+    opacity: 0.7;
+    transition: 0.3s;
+
+  }
+  
+  button:hover {opacity: 1}
+
+  .replyContainer{
+      display: grid;
+      grid-template-columns: 10fr auto auto ;
+      grid-gap: 1rem;
+
+
+  }
+
+  .commentText{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  .X{
+      font-size: large;
+      margin-right: 10px;
+  }
