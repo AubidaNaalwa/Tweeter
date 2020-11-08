@@ -17,7 +17,7 @@ const view = () => {
                 <button class ="deleteBtn">delete Post</button>
             </div>
         </div>`;
-            $("#grid-posts").append(postContainer);
+            $("#grid-posts").prepend(postContainer);
             commentContainer = $(`#post-${post.id}`).find(".commentContainer")
             for(let comment of post.comments){
                 commentContainer.append(`<li class ="comment-${comment.id}" data-id = ${comment.id}><span class ="X fas fa-trash">  </span><span>${comment.comment}</span></li>`)
@@ -25,9 +25,20 @@ const view = () => {
         }
     }
     
+    const enterTheScreen =(posts) =>{
+        $(`#loginContainer`).css(`display`,`none`);
+        $(`#container`).css(`display`,`grid`);
+        renderPosts(posts)
+    }
 
+    const logout =() =>{
+        $(`#loginContainer`).css(`display`,`grid`);
+        $(`#container`).css(`display`,`none`);
+    }
     return {
-        renderPosts
+        renderPosts,
+        enterTheScreen,
+        logout
     }
 
 }
