@@ -1,12 +1,71 @@
 body{
-    background-color: oldlace;
-   
+    
+    background-image: url('b4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    
 }
+#loginContainer{
+    display: grid;
+    grid-template-rows: 0.25fr 0.1fr 0.65fr;
+    justify-items: center;
+    grid-gap: 6rem;
+
+}
+ 
+#websiteName{
+    font-size: 600%;
+    color: white;
+}
+#logoDiv{
+    background-image: url('personal_logo.jpeg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  
+
+}
+
+#login{
+    color: white;
+    grid-area: i;
+
+}
+
+#signup{
+    color: white;
+    grid-area: u;
+    padding-left: 75%;
+}
+
+.mail-form-agile input[type="text"], 
+.mail-form-agile input[type="password"] {
+    padding: 13px 10px;
+    width: 92.5%;
+    font-size: 16px;
+    outline: none;
+    background:transparent;
+    border:0px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing:1.6px;
+    color:#fff;
+    }
+
+
+
 #container{
-    background-color: oldlace;
+    
+   
     display: grid;
     grid-template-columns: auto;
     grid-row-gap: 30px;
+    display: none;
+    
 }
 
 .grid-item{
@@ -14,7 +73,7 @@ body{
   }
 #grid-head{
     
-    color: black;
+    color: white;
    
     font-weight: 600;
     display: grid;
@@ -82,7 +141,7 @@ div#twitbtn.grid-item{
 }
 
 #grid-posts{
-    background-color: oldlace;
+   
     border-radius: 1ch;
 
 }
@@ -143,4 +202,9 @@ button {
   .X{
       font-size: large;
       margin-right: 10px;
+  }
+
+  #logout{
+    justify-self: right;
+    grid-column: 1 / 3;
   }
